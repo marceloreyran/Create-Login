@@ -1,0 +1,1 @@
+### This is an animation to create an access account to a platform, Html, CSS and Javascript were used.
