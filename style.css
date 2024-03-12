@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #B2FEFA;
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgb(240, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background: #B2FEFA;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.form {
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.control-form {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.control-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inlin-block;
+    vertical-align: top;
+}
+
+.control-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    font-size: 15px;
+
+}
+
+.control-form input:focus {
+    outline: 0;
+    border-color:#0ED2F7;
+}
+
+.control-form input:invalid {
+    border-color: #ff7b7b;
+}
+
+.control-form.success input {
+    border-color: #2ecc71;
+}
+
+.control-form.fail input {
+    border-color: #e74c3c;
+}
+
+.control-form i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.control-form.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.control-form.fail i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.control-form small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.control-form.fail small {
+    visibility: visible;
+}
+
+button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #B2FEFA;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #0ED2F7;
+   }
+   
+   button::after {
+    right: -10px;
+    background:#0ED2F7;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover span {
+    color: black;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: #0ED2F7;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
