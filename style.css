@@ -68,8 +68,10 @@ body {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid #f0f0f0;
     font-size: 15px;
+    border: 2px solid #B2FEFA;
+   background-color: rgb(240, 255, 255);
+   box-shadow: 2px 2px #B2FEFA;
 
 }
 
@@ -109,22 +111,26 @@ body {
 
 .control-form small {
     color: #e74c3c;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     visibility: hidden;
+    top: 5px;
+    
 }
 
 .control-form.fail small {
     visibility: visible;
 }
 
-button {
+.form button {
     display: inline-block;
+    justify-content: center;
     width: 150px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #B2FEFA;
+    box-shadow: 2px 2px #B2FEFA;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in;

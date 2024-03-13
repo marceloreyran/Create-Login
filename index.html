@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Form Validation</title>
-    <script src="https://use.fontawesome.com/c56d76baa9.js"></script>
 </head>
 
 <body>
@@ -16,16 +15,29 @@
         </div>
         <form action="" class="form" id="form">
             <div class="control-form">
-                <label for="Password">Password</label>
-                <input type="password" placeholder="Password" id="Password">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Example" id="username">
                 <i class="fa fa-check-circle" aria-hidden="true""></i>
                 <i class=" fa fa-exlcamation-circle" aria-hidden="true"></i>
-                <small> Message Here!</small>
+                <small> Error Message</small>
             </div>
-
             <div class="control-form">
-                <label for="Password-check">Password Check</label>
+                <label for="email">Email</label>
+                <input type="email" placeholder="abc@example.com" id="email">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="control-form">
+                <label for="password">Password</label>
                 <input type="password" placeholder="Password" id="password">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="control-form">
+                <label for="passwordCheck">Password Check</label>
+                <input type="password" placeholder="Password check" id="passwordCheck">
                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                 <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                 <small>Must be the same as above.</small>
@@ -36,7 +48,7 @@
 
         </form>
     </div>
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
