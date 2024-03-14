@@ -5,9 +5,10 @@
 }
 
 body {
-    background: #B2FEFA;
-    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
-    background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-azul-degradado_23-2149347096.jpg?w=1480&t=st=1710443765~exp=1710444365~hmac=42aa1f11f92d56420af0614a597dc888163733df446c94eedd9fd490bc37d50d');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -126,6 +127,7 @@ body {
 .form button {
     display: inline-block;
     justify-content: center;
+    margin-left: 60px;
     width: 150px;
     height: 50px;
     border-radius: 10px;
